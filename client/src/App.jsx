@@ -10,6 +10,9 @@ function Sidebar() {
 
   return (
     <div className="sidebar">
+      <div className="sidebar-header">
+        <h2>Locomotor Monitor Web Application</h2>
+      </div>
       <div className="menu">
         <p>Menu:</p>
         <ul>
