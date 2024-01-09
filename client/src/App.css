@@ -1,27 +1,56 @@
 .sidebar {
   width: 200px;
-  height: 300px;
+  height: 100vh;
   background-color: #F1F2F7;
-  color: #5A67BA;
+  color: #000000;
+  font-family: 'DM Sans', sans-serif;
   padding: 20px;
+  overflow-y: hidden;
 }
 
-.menu, .others {
+.sidebar-header {
   margin-bottom: 20px;
 }
 
-.menu ul, .others ul {
+.sidebar-header h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #5A67BA; /* Change the color to #5A67BA */
+  margin: 0;
+}
+
+.menu,
+.others {
+  margin-bottom: 20px;
+}
+
+.menu p,
+.others p {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.menu ul,
+.others ul {
   list-style: none;
   padding: 0;
 }
 
-.menu li, .others li {
+.menu li,
+.others li {
   margin-bottom: 5px;
   cursor: pointer;
+  font-size: 14px;
+  transition: font-weight 0.3s;
 }
 
-.menu li:hover, .others li:hover {
-  background-color: #E4E7F4; /* Change color on hover */
+.menu li:hover,
+.menu li.active,
+.others li:hover,
+.others li.active {
+  background-color: #E4E7F4;
+  color: #5A67BA;
+  font-weight: bold;
 }
 
 .content {
