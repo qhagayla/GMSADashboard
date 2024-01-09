@@ -22,19 +22,22 @@ function Sidebar() {
             className={activeMenuItem === 'dashboard' ? 'active' : ''}
             onClick={() => handleMenuItemClick('dashboard')}
           >
-            <FontAwesomeIcon icon={faCalendar} size="lg" /> Dashboard
+            <FontAwesomeIcon icon={faCalendar} size="lg" />{' '}
+            <span className="icon-text">Dashboard</span>
           </li>
           <li
             className={activeMenuItem === 'recordedVideos' ? 'active' : ''}
             onClick={() => handleMenuItemClick('recordedVideos')}
           >
-            <FontAwesomeIcon icon={faVideo} size="lg" /> Recorded Videos
+            <FontAwesomeIcon icon={faVideo} size="lg" />{' '}
+            <span className="icon-text">Recorded Videos</span>
           </li>
           <li
             className={activeMenuItem === 'results' ? 'active' : ''}
             onClick={() => handleMenuItemClick('results')}
           >
-            <FontAwesomeIcon icon={faSquarePollHorizontal} size="lg" /> Results
+            <FontAwesomeIcon icon={faSquarePollHorizontal} size="lg" />{' '}
+            <span className="icon-text">Results</span>
           </li>
         </ul>
       </div>
@@ -45,13 +48,15 @@ function Sidebar() {
             className={activeMenuItem === 'settings' ? 'active' : ''}
             onClick={() => handleMenuItemClick('settings')}
           >
-            <FontAwesomeIcon icon={faGear} size="lg" /> Settings
+            <FontAwesomeIcon icon={faGear} size="lg" />{' '}
+            <span className="icon-text">Settings</span>
           </li>
           <li
             className={activeMenuItem === 'account' ? 'active' : ''}
             onClick={() => handleMenuItemClick('account')}
           >
-            <FontAwesomeIcon icon={faUser} size="lg" /> Account
+            <FontAwesomeIcon icon={faUser} size="lg" />{' '}
+            <span className="icon-text">Account</span>
           </li>
         </ul>
       </div>
