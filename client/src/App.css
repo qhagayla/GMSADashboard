@@ -1,27 +1,37 @@
 .sidebar {
   width: 200px;
-  height: 300px;
+  height: 100vh;
   background-color: #F1F2F7;
-  color: #5A67BA;
+  color: #000; /* Default font color */
+  font-family: 'DM Sans', sans-serif; /* Set font to DM Sans */
+  font-weight: bold; /* Make the text bold */
   padding: 20px;
+  overflow-y: hidden;
 }
 
-.menu, .others {
+.menu,
+.others {
   margin-bottom: 20px;
 }
 
-.menu ul, .others ul {
+.menu ul,
+.others ul {
   list-style: none;
   padding: 0;
 }
 
-.menu li, .others li {
+.menu li,
+.others li {
   margin-bottom: 5px;
   cursor: pointer;
 }
 
-.menu li:hover, .others li:hover {
-  background-color: #E4E7F4; /* Change color on hover */
+.menu li:hover,
+.menu li.active,
+.others li:hover,
+.others li.active {
+  background-color: #E4E7F4;
+  color: #5A67BA; /* Change font color on hover or selection */
 }
 
 .content {
