@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import './App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendar, faVideo, faGear, faSquarePollHorizontal, faUser } from '@fortawesome/free-solid-svg-icons';
 
 function Sidebar() {
   const [activeMenuItem, setActiveMenuItem] = useState('');
@@ -20,19 +22,19 @@ function Sidebar() {
             className={activeMenuItem === 'dashboard' ? 'active' : ''}
             onClick={() => handleMenuItemClick('dashboard')}
           >
-            Dashboard
+            <FontAwesomeIcon icon={faCalendar} size="lg" /> Dashboard
           </li>
           <li
             className={activeMenuItem === 'recordedVideos' ? 'active' : ''}
             onClick={() => handleMenuItemClick('recordedVideos')}
           >
-            Recorded Videos
+            <FontAwesomeIcon icon={faVideo} size="lg" /> Recorded Videos
           </li>
           <li
             className={activeMenuItem === 'results' ? 'active' : ''}
             onClick={() => handleMenuItemClick('results')}
           >
-            Results
+            <FontAwesomeIcon icon={faSquarePollHorizontal} size="lg" /> Results
           </li>
         </ul>
       </div>
@@ -43,13 +45,13 @@ function Sidebar() {
             className={activeMenuItem === 'settings' ? 'active' : ''}
             onClick={() => handleMenuItemClick('settings')}
           >
-            Settings
+            <FontAwesomeIcon icon={faGear} size="lg" /> Settings
           </li>
           <li
             className={activeMenuItem === 'account' ? 'active' : ''}
             onClick={() => handleMenuItemClick('account')}
           >
-            Account
+            <FontAwesomeIcon icon={faUser} size="lg" /> Account
           </li>
         </ul>
       </div>
