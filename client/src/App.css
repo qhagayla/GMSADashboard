@@ -1,10 +1,10 @@
 .sidebar {
-  width: 200px;
+  width: 240px;
   height: 100vh;
   background-color: #F1F2F7;
   color: #000000;
   font-family: 'DM Sans', sans-serif;
-  padding: 20px;
+  padding: 0px;
   overflow-y: hidden;
 }
 
@@ -14,16 +14,17 @@
   padding-bottom: 10px;
 }
 
-.sidebar-header h2 {
-  font-size: 20px;
-  font-weight: bold;
-  color: #5A67BA;
-  margin: 0;
+.sidebar-header img.logo-image {
+  width: 150%; /* Adjust the width as needed */
+  width: 220px; /* Set a maximum width if desired */
+  height: 55px;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
 .menu,
 .others {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .menu p,

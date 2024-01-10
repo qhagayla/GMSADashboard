@@ -3,6 +3,9 @@ import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar, faVideo, faGear, faSquarePollHorizontal, faUser } from '@fortawesome/free-solid-svg-icons';
 
+// Assuming Logo.png is in the specified directory
+import logoImage from './components/Logo.png';
+
 function Sidebar() {
   const [activeMenuItem, setActiveMenuItem] = useState('');
 
@@ -13,10 +16,9 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebar-header">
-        <h2>Locomotor Monitor Web Application</h2>
+        <img src={logoImage} alt="Logo" className="logo-image" />
       </div>
       <div className="menu">
-        <p>Menu:</p>
         <ul>
           <li
             className={activeMenuItem === 'dashboard' ? 'active' : ''}
@@ -42,7 +44,6 @@ function Sidebar() {
         </ul>
       </div>
       <div className="others">
-        <p>Others:</p>
         <ul>
           <li
             className={activeMenuItem === 'settings' ? 'active' : ''}
