@@ -1,5 +1,10 @@
 import { useState } from 'react';
 import './App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendar, faVideo, faGear, faSquarePollHorizontal, faUser } from '@fortawesome/free-solid-svg-icons';
+
+// Assuming Logo.png is in the specified directory
+import logoImage from './components/Logo.png';
 
 function Sidebar() {
   const [activeMenuItem, setActiveMenuItem] = useState('');
@@ -11,45 +16,48 @@ function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebar-header">
-        <h2>Locomotor Monitor Web Application</h2>
+        <img src={logoImage} alt="Logo" className="logo-image" />
       </div>
       <div className="menu">
-        <p>Menu:</p>
         <ul>
           <li
             className={activeMenuItem === 'dashboard' ? 'active' : ''}
             onClick={() => handleMenuItemClick('dashboard')}
           >
-            Dashboard
+            <FontAwesomeIcon icon={faCalendar} size="lg" />{' '}
+            <span className="icon-text">Dashboard</span>
           </li>
           <li
             className={activeMenuItem === 'recordedVideos' ? 'active' : ''}
             onClick={() => handleMenuItemClick('recordedVideos')}
           >
-            Recorded Videos
+            <FontAwesomeIcon icon={faVideo} size="lg" />{' '}
+            <span className="icon-text">Recorded Videos</span>
           </li>
           <li
             className={activeMenuItem === 'results' ? 'active' : ''}
             onClick={() => handleMenuItemClick('results')}
           >
-            Results
+            <FontAwesomeIcon icon={faSquarePollHorizontal} size="lg" />{' '}
+            <span className="icon-text">Results</span>
           </li>
         </ul>
       </div>
       <div className="others">
-        <p>Others:</p>
         <ul>
           <li
             className={activeMenuItem === 'settings' ? 'active' : ''}
             onClick={() => handleMenuItemClick('settings')}
           >
-            Settings
+            <FontAwesomeIcon icon={faGear} size="lg" />{' '}
+            <span className="icon-text">Settings</span>
           </li>
           <li
             className={activeMenuItem === 'account' ? 'active' : ''}
             onClick={() => handleMenuItemClick('account')}
           >
-            Account
+            <FontAwesomeIcon icon={faUser} size="lg" />{' '}
+            <span className="icon-text">Account</span>
           </li>
         </ul>
       </div>
