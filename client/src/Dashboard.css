@@ -1,6 +1,6 @@
 .dashboard {
   padding: 20px;
-  color: #ffffff;
+  color: #000000;
   text-align: center;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .widget {
-  background-color: #f4f4f4;
+  background-color: #f4f4f4;  
   padding: 15px;
   margin-bottom: 20px;
   margin-left: 250px;
