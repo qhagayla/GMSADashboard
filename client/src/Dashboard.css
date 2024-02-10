@@ -1,5 +1,7 @@
 .dashboard {
   padding: 20px;
+  color: #000000;
+  text-align: center;
 }
 
 .dashboard-content {
@@ -8,15 +10,19 @@
 }
 
 .widget {
-  background-color: #f4f4f4;
+  background-color: #f4f4f4;  
   padding: 15px;
   margin-bottom: 20px;
+  margin-left: 250px;
+  margin-right: 250px;
   border-radius: 5px;
   width: 45%;
+  border: 2px solid #000;
 }
 
 .widget h2 {
   color: #333;
+  margin-bottom: 10px;
 }
 
 .widget ul {

@@ -15,7 +15,7 @@ function Sidebar({ activeMenuItem, handleMenuItemClick }) {
   return (
     <div className="sidebar">
       <div className="sidebar-header">
-        <h2>TINYTRACKS</h2>
+        <h2>TINY TRACKS</h2>
       </div>
       <div className="menu">
         <ul>
