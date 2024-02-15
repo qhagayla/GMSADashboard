@@ -7,7 +7,10 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
+import logo from "./components/Logo.png";
 import "./Sidebar.css";
+import DateDisplay from "./DateDisplay";
+
 
 function Sidebar({ activeMenuItem, handleMenuItemClick }) {
   const iconStyle = { color: 'white' };
@@ -15,7 +18,9 @@ function Sidebar({ activeMenuItem, handleMenuItemClick }) {
   return (
     <div className="sidebar">
       <div className="sidebar-header">
-        <h2>TINY TRACKS</h2>
+        {/* Include the logo here */}
+        <img src={logo} alt="Logo" />
+        <span className="logo-text">TINY TRACKS</span>
       </div>
       <div className="menu">
         <ul>

@@ -1,19 +1,54 @@
 /* Sidebar.css */
 .sidebar {
   width: 240px;
-  height: 100vh;
-  background-color: #4264D0;
+  height: 95vh;
+  background-color: #ffda4f;
   color: #ffffff;
   font-family: 'DM Sans', sans-serif;
-  padding: 0px;
+  padding: 10px;
   overflow-y: hidden;
+  border-radius: 25px;
+  margin-left: 15px;
+}
+
+.greeting {
+  background-color: #feecd2;
+  padding: 20px;
+  color: #239263;
+  border-radius: 25px;
+  margin-top: 40px;
+  flex: 1; /* Occupy remaining space */
+}
+
+.greeting-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.greeting-top-content {
+  text-align: left;
+}
+
+.greeting-top-content h2 {
+  font-size: 30px;
+  margin-right: 4px;
 }
 
 .sidebar-header {
   margin-top: 40px;
   margin-bottom: 0px;
-  border-bottom: 2px solid #5A67BA;
+  border-bottom: 2px solid #ffffff;
   padding-bottom: 10px;
+}
+
+.sidebar-header img {
+  width: 200px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.logo-text {
+  display: none; /* Hide the text when the logo is present */
 }
 
 .sidebar-header h2 {
@@ -23,11 +58,12 @@
 .menu,
 .others {
   margin-bottom: 10px;
+  margin-right: 20px;
 }
 
 .menu p,
-.others p,
-.menu li,
+.others p 
+.menu li 
 .others li {
   font-weight: bold;
   font-size: 16px;
@@ -52,7 +88,7 @@
 .menu li.active,
 .others li:hover,
 .others li.active {
-  background-color: #728DE4;
+  background-color: #1e9060;
   font-weight: bold;
   margin-left: 18px;
 }

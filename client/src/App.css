@@ -74,3 +74,33 @@
   flex: 1;
   padding: 20px;
 }
+
+.content {
+  flex: 1; /* Occupy remaining space */
+  padding: 20px;
+}
+
+.greeting {
+  background-color: #feecd2;
+  padding: 20px;
+  color: #239263;
+  border-radius: 25px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row; /* Change flex direction to row */
+  justify-content: space-between; /* Add space between items */
+  align-items: center; /* Align items vertically */
+  width: 750px;
+}
+
+.greeting-text {
+  margin-bottom: 10px; /* Add space between each line of text */
+}
+
+.greeting h2 {
+  margin-bottom: 5px; /* Adjust space for DateDisplay */
+}
+
+.greeting img {
+  max-width: 350px; /* Adjust the width of the image as needed */
+}

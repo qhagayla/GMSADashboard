@@ -3,6 +3,7 @@ import "./App.css";
 import Sidebar from "./Sidebar";
 import Dashboard from "./Dashboard";
 import RecordedVideos from "./RecordedVideos";
+import DateDisplay from "./DateDisplay";
 
 function App() {
   const [activeMenuItem, setActiveMenuItem] = useState("");
@@ -17,8 +18,22 @@ function App() {
         activeMenuItem={activeMenuItem}
         handleMenuItemClick={handleMenuItemClick}
       />
-      {activeMenuItem === "dashboard" && <Dashboard />}
-      {activeMenuItem === "recordedVideos" && <RecordedVideos />}
+      <div className="content">
+        {activeMenuItem === "" && ( // Render greeting only if no active menu item is selected
+          <div className="greeting">
+            <h1>Hello, PT Sumalde!</h1>
+            <h2>Have a nice day!</h2>
+            <DateDisplay />
+            <img
+              src="src\components\dashboard-top.png"
+              alt="Image"
+            />
+          </div>
+        )}
+
+        {activeMenuItem === "dashboard" && <Dashboard />}
+        {activeMenuItem === "recordedVideos" && <RecordedVideos />}
+      </div>
     </div>
   );
 }
