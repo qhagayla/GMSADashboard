@@ -12,31 +12,6 @@
   font-weight: bold;
 }
 
-.greeting {
-  background-color: #feecd2;
-  padding: 20px;
-  color: #239263;
-  border-radius: 25px;
-  margin-top: 40px;
-  margin-right: 5px;
-  flex: 1; /* Occupy remaining space */
-}
-
-.greeting-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.greeting-top-content {
-  text-align: left;
-}
-
-.greeting-top-content h2 {
-  font-size: 30px;
-  margin-right: 4px;
-}
-
 .sidebar-header {
   margin-top: 40px;
   margin-bottom: 0px;
