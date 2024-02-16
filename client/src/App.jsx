@@ -20,15 +20,14 @@ function App() {
       />
       <div className="content">
         {activeMenuItem === "" && ( // Render greeting only if no active menu item is selected
+        <div className="content-top">
           <div className="greeting">
             <h1>Hello, PT Sumalde!</h1>
             <h2>Have a nice day!</h2>
             <DateDisplay />
-            <img
-              src="src\components\dashboard-top.png"
-              alt="Image"
-            />
           </div>
+          <img src="src\components\dashboard-top.png" alt="Image" />
+        </div>
         )}
 
         {activeMenuItem === "dashboard" && <Dashboard />}

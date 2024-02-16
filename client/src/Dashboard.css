@@ -2,7 +2,7 @@
   font-family: Arial, sans-serif;
   width: 80%;
   margin: 0 auto;
-  margin-left: 100px;
+  margin-left: 60px;
   color: black;
 }
 
@@ -41,3 +41,4 @@
 .widget:nth-child(3) {
   background-color: #feecd2;
 }
+

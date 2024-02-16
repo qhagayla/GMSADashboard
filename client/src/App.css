@@ -76,31 +76,34 @@
 }
 
 .content {
-  flex: 1; /* Occupy remaining space */
-  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-top {
+  background-color: #feecd2;
+  padding: 10px;
+  color: #239263;
+  border-radius: 25px;
+  display: flex; /* Using flexbox */
+  align-items: center; /* Centering vertically */
+  justify-content: space-between; /* Distributing items evenly */
+  margin-bottom: 500px;
+  margin-top: 25px;
+  margin-left: 120px;
 }
 
 .greeting {
-  background-color: #feecd2;
-  padding: 20px;
-  color: #239263;
-  border-radius: 25px;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: row; /* Change flex direction to row */
-  justify-content: space-between; /* Add space between items */
-  align-items: center; /* Align items vertically */
-  width: 750px;
-}
-
-.greeting-text {
-  margin-bottom: 10px; /* Add space between each line of text */
+  text-align: left;
+  margin-bottom: 40px;
 }
 
 .greeting h2 {
-  margin-bottom: 5px; /* Adjust space for DateDisplay */
+  font-size: 30px; /* Adjust the word "Have a nice day!" */
+  margin-right: 10px;
 }
 
 .greeting img {
   max-width: 350px; /* Adjust the width of the image as needed */
+  flex-direction: row;
 }

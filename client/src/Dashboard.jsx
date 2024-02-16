@@ -1,6 +1,5 @@
 import React from "react";
 import "./Dashboard.css";
-import DateDisplay from "./DateDisplay";
 
 function Dashboard() {
   
