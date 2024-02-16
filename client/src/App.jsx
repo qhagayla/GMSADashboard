@@ -22,9 +22,9 @@ function App() {
         {activeMenuItem === "" && ( // Render greeting only if no active menu item is selected
         <div className="content-top">
           <div className="greeting">
+            <DateDisplay />
             <h1>Hello, PT Sumalde!</h1>
             <h2>Have a nice day!</h2>
-            <DateDisplay />
           </div>
           <img src="src\components\dashboard-top.png" alt="Image" />
         </div>

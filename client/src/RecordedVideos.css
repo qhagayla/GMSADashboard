@@ -2,13 +2,13 @@
     flex: 1;
     padding: 20px;
     text-align: center;
-    margin-left: 400px;
+    margin-left: 600px;
     margin-right: 400px;
-    color: #000000;
+    color: #239263;
   }
   
   .recorded-videos h2 {
-    font-size: 1.9em;
+    font-size: 25px;
     margin-bottom: 10px;
 
   }
@@ -22,10 +22,10 @@
   
   .video-item {
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 25px;
     background-color: #feecd2;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: 100%;
+    height: 90%;
     display: flex;
     flex-direction: column;
   }
@@ -33,12 +33,12 @@
   .video-item h3 {
     font-size: 1.1em;
     margin-bottom: 10px;
-    color: black;
+    color: #239263;
     text-align: center;
   }
   
   .video-info {
-    color: black;
+    color: #239263;
     margin-bottom: 10px;
   }
   

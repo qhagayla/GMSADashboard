@@ -75,11 +75,6 @@
   padding: 20px;
 }
 
-.content {
-  display: flex;
-  justify-content: space-between;
-}
-
 .content-top {
   background-color: #feecd2;
   padding: 10px;
@@ -89,21 +84,16 @@
   align-items: center; /* Centering vertically */
   justify-content: space-between; /* Distributing items evenly */
   margin-bottom: 500px;
-  margin-top: 25px;
-  margin-left: 120px;
 }
 
 .greeting {
   text-align: left;
   margin-bottom: 40px;
+  font-size: 16px; /* Hello, PT Sumalde! */
 }
 
 .greeting h2 {
   font-size: 30px; /* Adjust the word "Have a nice day!" */
   margin-right: 10px;
-}
-
-.greeting img {
-  max-width: 350px; /* Adjust the width of the image as needed */
-  flex-direction: row;
+  margin-bottom: 10px;
 }

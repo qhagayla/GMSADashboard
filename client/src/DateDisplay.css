@@ -1,5 +1,12 @@
-.dashboard-top-content h1,
+.date-wrapper {
+  border-radius: 25px;
+  border: 1px solid #ffda4f;
+  padding: 10px;
+  background-color: #ffda4f;
+}
 .dashboard-date {
-  font-family: Arial, sans-serif; /* Match the font family */
-  color: #239263; /* Match the color */
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  margin-right: 5px;
 }

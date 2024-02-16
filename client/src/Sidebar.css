@@ -1,6 +1,6 @@
 /* Sidebar.css */
 .sidebar {
-  width: 240px;
+  width: 260px;
   height: 95vh;
   background-color: #ffda4f;
   color: #ffffff;
@@ -9,6 +9,7 @@
   overflow-y: hidden;
   border-radius: 25px;
   margin-left: 15px;
+  font-weight: bold;
 }
 
 .greeting {
@@ -17,6 +18,7 @@
   color: #239263;
   border-radius: 25px;
   margin-top: 40px;
+  margin-right: 5px;
   flex: 1; /* Occupy remaining space */
 }
 
@@ -45,6 +47,7 @@
 .sidebar-header img {
   width: 200px; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
+  margin-bottom: 40px;
 }
 
 .logo-text {
@@ -67,7 +70,7 @@
 .others li {
   font-weight: bold;
   font-size: 16px;
-  color: white; /* Adjusted font color */
+  color: rgb(248, 248, 248); /* Adjusted font color */
 }
 
 .menu ul,
@@ -94,7 +97,7 @@
 }
 
 .content {
-  margin-left: 220px;
+  margin-left: 20px;
   padding: 20px;
 }
 
@@ -102,4 +105,5 @@
 .others li span.icon-text {
   margin-left: 20px;
   margin-right: 1px;
+  font-size: 20px;
 }

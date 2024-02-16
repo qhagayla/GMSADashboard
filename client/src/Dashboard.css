@@ -2,8 +2,9 @@
   font-family: Arial, sans-serif;
   width: 80%;
   margin: 0 auto;
-  margin-left: 60px;
-  color: black;
+  margin-left: 240px;
+  color: #239263;
+  text-align: center;
 }
 
 .dashboard-content {
