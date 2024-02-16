@@ -43,3 +43,15 @@
   background-color: #feecd2;
 }
 
+.dashboard button {
+  margin-bottom: 5px; /* Added some spacing below the button */
+  background-color: #ffda4f; /* Change the color of the button */
+  color: #239263; /* Change the font color */
+  font-weight: bold;
+  border-radius: 25px;
+  font-size: 19px;
+}
+
+.dashboard button:hover {
+  background-color: #ffd333;
+}

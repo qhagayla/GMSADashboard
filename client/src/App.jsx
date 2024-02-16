@@ -12,6 +12,10 @@ function App() {
     setActiveMenuItem(menuItem);
   };
 
+  const handleBackToAppClick = () => {
+    setActiveMenuItem(""); // Resetting to an empty string to go back to App
+  };
+
   return (
     <div className="app-container">
       <Sidebar
@@ -19,19 +23,19 @@ function App() {
         handleMenuItemClick={handleMenuItemClick}
       />
       <div className="content">
-        {activeMenuItem === "" && ( // Render greeting only if no active menu item is selected
-        <div className="content-top">
-          <div className="greeting">
-            <DateDisplay />
-            <h1>Hello, PT Sumalde!</h1>
-            <h2>Have a nice day!</h2>
+        {activeMenuItem === "" && (
+          <div className="content-top">
+            <div className="greeting">
+              <DateDisplay />
+              <h1 style={{ marginTop: '40px' }}>Hello, PT Sumalde!</h1> 
+              <h2>Have a nice day!</h2> 
+            </div>
+            <img src="src\components\dashboard-top.png" alt="Image" />
           </div>
-          <img src="src\components\dashboard-top.png" alt="Image" />
-        </div>
         )}
 
-        {activeMenuItem === "dashboard" && <Dashboard />}
-        {activeMenuItem === "recordedVideos" && <RecordedVideos />}
+        {activeMenuItem === "dashboard" && <Dashboard onBackClick={handleBackToAppClick} />}
+        {activeMenuItem === "recordedVideos" && <RecordedVideos onBackClick={handleBackToAppClick} />}
       </div>
     </div>
   );

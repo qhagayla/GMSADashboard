@@ -1,10 +1,10 @@
 import React from "react";
 import "./Dashboard.css";
 
-function Dashboard() {
-  
+function Dashboard({ onBackClick }) {
   return (
     <div className="dashboard">
+      <button onClick={onBackClick}>Back Button</button>
       <div className="dashboard-content">
         <div className="widget">
           <h2>List of Appointments</h2>

@@ -83,17 +83,13 @@
   display: flex; /* Using flexbox */
   align-items: center; /* Centering vertically */
   justify-content: space-between; /* Distributing items evenly */
-  margin-bottom: 500px;
 }
 
 .greeting {
   text-align: left;
-  margin-bottom: 40px;
   font-size: 16px; /* Hello, PT Sumalde! */
 }
 
 .greeting h2 {
   font-size: 30px; /* Adjust the word "Have a nice day!" */
-  margin-right: 10px;
-  margin-bottom: 10px;
 }
