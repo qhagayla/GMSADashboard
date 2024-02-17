@@ -66,3 +66,38 @@
   font-size: 30px;
   align-self: flex-start;
 }
+
+.right-wrapper {
+  width: 34.5%; /* Adjust the width as needed */
+  height: 90.5%;
+  padding: 20px;
+  background-color: #ffda4f;
+  border-radius: 25px;
+  position: absolute; /* Use absolute positioning */
+  top: 35px; /* Position from the top */
+  right: 19.7px; /* Adjust the distance from the right */
+  background-image: url('./components/DoctorProfile.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+  background-size: cover; /* Cover the entire wrapper with the background image */
+  background-position: right; /* Center the background image */
+
+}
+
+.doctor-profile h3 {
+  color: #239263;
+  font-size: 30px;
+  margin-top: 5px;
+  text-align: center;
+  background-color: #ffda4f;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+.details-doctor-profile {
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  border-radius: 25px;
+}
+.details-doctor-profile h3 {
+  background-color: #ffffff;
+  
+}

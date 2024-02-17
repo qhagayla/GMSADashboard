@@ -23,7 +23,8 @@ function App() {
         handleMenuItemClick={handleMenuItemClick}
       />
       <div className="content">
-      {/* Wrapper for "Greetings" */}
+        {/* Your existing content */}
+        {/* Wrapper for "Greetings" */}
         {activeMenuItem === "" && (
           <div className="content-top">
             <div className="greeting">
@@ -39,7 +40,7 @@ function App() {
         {activeMenuItem === "" && (
           <div className="appointments-wrapper">
             <h3>List of appointments</h3>
-            {/* Content for "List of appointments" goes here */}
+
           </div>
         )}
 
@@ -47,7 +48,7 @@ function App() {
         {activeMenuItem === "" && (
           <div className="patient-activity-wrapper">
             <h3>Patient Activity</h3>
-            {/* Content for "Patient Activity" goes here */}
+
           </div>
         )}
 
@@ -55,6 +56,20 @@ function App() {
         {activeMenuItem === "dashboard" && <Dashboard onBackClick={handleBackToAppClick} />}
         {activeMenuItem === "recordedVideos" && <RecordedVideos onBackClick={handleBackToAppClick} />}
       </div>
+
+      {/* Right-side wrapper for "Doctor's Profile" */}
+      {activeMenuItem === "" && (
+      <div className="right-wrapper">
+        <div className="doctor-profile">
+          <h3>Doctor's Profile</h3>
+          <div className="details-doctor-profile">
+            <h3>Name: Mr. Sumalde</h3>
+            <h3>SAMPLE SAMPLE SAMPLE SAMPLE</h3>
+
+          </div>
+        </div>
+      </div>
+      )}
     </div>
   );
 }

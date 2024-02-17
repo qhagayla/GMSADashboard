@@ -46,6 +46,7 @@
   transition: font-weight 0.3s;
   padding: 10px;
   display: flex;
+  font-size: 20px;
 }
 
 .menu li:hover {
