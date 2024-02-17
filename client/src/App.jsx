@@ -51,7 +51,7 @@ function App() {
           </div>
         )}
 
-        {/* Dashboard and RecordedVideos are rendered conditionally */}
+        {/* Dashboard, RecordedVideos, Results, Settings, and Account are rendered conditionally */}
         {activeMenuItem === "dashboard" && <Dashboard onBackClick={handleBackToAppClick} />}
         {activeMenuItem === "recordedVideos" && <RecordedVideos onBackClick={handleBackToAppClick} />}
       </div>
