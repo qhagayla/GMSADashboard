@@ -1,10 +1,18 @@
+.recorded-videos-wrapper {
+  background-color: #feecd2;
+  border-radius: 25px;
+  margin-top: 6px;
+
+}
+
 .recorded-videos {
     flex: 1;
     padding: 20px;
     text-align: center;
-    margin-left: 600px;
-    margin-right: 400px;
+    margin-left: 200px;
+    margin-right: 200px;
     color: #239263;
+
   }
   
   .recorded-videos h2 {
@@ -23,8 +31,7 @@
   .video-item {
     padding: 10px;
     border-radius: 25px;
-    background-color: #feecd2;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffda4f;
     height: 90%;
     display: flex;
     flex-direction: column;

@@ -23,6 +23,7 @@ function App() {
         handleMenuItemClick={handleMenuItemClick}
       />
       <div className="content">
+      {/* Wrapper for "Greetings" */}
         {activeMenuItem === "" && (
           <div className="content-top">
             <div className="greeting">
@@ -34,6 +35,23 @@ function App() {
           </div>
         )}
 
+        {/* Wrapper for "List of appointments" */}
+        {activeMenuItem === "" && (
+          <div className="appointments-wrapper">
+            <h3>List of appointments</h3>
+            {/* Content for "List of appointments" goes here */}
+          </div>
+        )}
+
+        {/* Wrapper for "Patient Activity" */}
+        {activeMenuItem === "" && (
+          <div className="patient-activity-wrapper">
+            <h3>Patient Activity</h3>
+            {/* Content for "Patient Activity" goes here */}
+          </div>
+        )}
+
+        {/* Dashboard and RecordedVideos are rendered conditionally */}
         {activeMenuItem === "dashboard" && <Dashboard onBackClick={handleBackToAppClick} />}
         {activeMenuItem === "recordedVideos" && <RecordedVideos onBackClick={handleBackToAppClick} />}
       </div>
