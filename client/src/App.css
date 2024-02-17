@@ -14,7 +14,7 @@
   display: flex; 
   align-items: center; /* Centering vertically */
   justify-content: space-between; /* Distributing items evenly */
-  margin-right: 145px;
+  margin-right: 130px;
 }
 
 .content-top img[src*="dashboard-top.png"] {
@@ -95,6 +95,7 @@
   background-color: #ffffff;
   margin-bottom: 10px;
   border-radius: 25px;
+  padding: 5px;
 }
 .details-doctor-profile h3 {
   background-color: #ffffff;
