@@ -74,3 +74,22 @@
   flex: 1;
   padding: 20px;
 }
+
+.content-top {
+  background-color: #feecd2;
+  padding: 20px;
+  color: #239263;
+  border-radius: 25px;
+  display: flex; /* Using flexbox */
+  align-items: center; /* Centering vertically */
+  justify-content: space-between; /* Distributing items evenly */
+}
+
+.greeting {
+  text-align: left;
+  font-size: 16px; /* Hello, PT Sumalde! */
+}
+
+.greeting h2 {
+  font-size: 30px; /* Adjust the word "Have a nice day!" */
+}

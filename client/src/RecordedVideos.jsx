@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./RecordedVideos.css";
 
-const RecordedVideos = () => {
+const RecordedVideos = ({ onBackClick }) => {
   const [videoList] = useState(() => [
     { id: 1, title: "Run", date: "2024-02-01", duration: "10:00", thumbnail: "https://via.placeholder.com/150" },
     { id: 2, title: "Gallop", date: "2024-02-02", duration: "12:30", thumbnail: "https://via.placeholder.com/150" },
@@ -33,6 +33,7 @@ const RecordedVideos = () => {
 
   return (
     <div className="recorded-videos">
+      <button onClick={onBackClick} className="back-button">Back Button</button>
       <h2>Recorded Videos</h2>
       <div className="video-list">
         {currentVideos.map((video) => (
