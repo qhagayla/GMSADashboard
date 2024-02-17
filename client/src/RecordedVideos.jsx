@@ -32,35 +32,37 @@ const RecordedVideos = ({ onBackClick }) => {
   };
 
   return (
-    <div className="recorded-videos">
-      <button onClick={onBackClick} className="back-button">Back Button</button>
-      <h2>Recorded Videos</h2>
-      <div className="video-list">
-        {currentVideos.map((video) => (
-          <div key={video.id} className="video-item">
-            <img
-              className="video-thumbnail"
-              src={video.thumbnail}
-              alt={`Thumbnail for ${video.title}`}
-            />
-            <h3>{video.title}</h3>
-            <p className="video-info">
-              Date: {video.date} | Duration: {video.duration}
-            </p>
-          </div>
-        ))}
-      </div>
+    <div className="recorded-videos-wrapper"> {/* Wrapper */}
+      <div className="recorded-videos"> {/* Existing content inside the wrapper */}
+        <button onClick={onBackClick} className="back-button">Back Button</button>
+        <h2>Recorded Videos</h2>
+        <div className="video-list">
+          {currentVideos.map((video) => (
+            <div key={video.id} className="video-item">
+              <img
+                className="video-thumbnail"
+                src={video.thumbnail}
+                alt={`Thumbnail for ${video.title}`}
+              />
+              <h3>{video.title}</h3>
+              <p className="video-info">
+                Date: {video.date} | Duration: {video.duration}
+              </p>
+            </div>
+          ))}
+        </div>
 
-      <div className="pagination">
-        {Array.from({ length: totalPages }, (_, index) => (
-          <button
-            key={index + 1}
-            onClick={() => handlePageChange(index + 1)}
-            className={currentPage === index + 1 ? "active" : ""}
-          >
-            {index + 1}
-          </button>
-        ))}
+        <div className="pagination">
+          {Array.from({ length: totalPages }, (_, index) => (
+            <button
+              key={index + 1}
+              onClick={() => handlePageChange(index + 1)}
+              className={currentPage === index + 1 ? "active" : ""}
+            >
+              {index + 1}
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   );
