@@ -29,7 +29,7 @@ function App() {
           <div className="content-top">
             <div className="greeting">
               <DateDisplay />
-              <h1 style={{ marginTop: '40px' }}>Hello, PT Sumalde!</h1> 
+              <h1>Hello, PT Sumalde!</h1> 
               <h2>Have a nice day!</h2> 
             </div>
             <img src="src\components\dashboard-top.png" alt="Image" />
