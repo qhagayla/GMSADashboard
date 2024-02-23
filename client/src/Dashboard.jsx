@@ -5,9 +5,8 @@ function Dashboard({ onBackClick }) {
   return (
     <div className="dashboard">
       <button onClick={onBackClick}>Back Button</button>
-      <h2>Dashboard Summary</h2>
+      <h1>Dashboard Summary</h1>
       <div className="dashboard-content">
-        <div className="dashboard-wrapper">
           <div className="widget">
             <h2>List of Appointments</h2>
             <ul>
@@ -32,7 +31,6 @@ function Dashboard({ onBackClick }) {
               <li>Patient Z: Treatment completed</li>
             </ul>
           </div>
-        </div>
       </div>
     </div>
   );
