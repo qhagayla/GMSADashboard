@@ -4,7 +4,7 @@ import "./Dashboard.css";
 function Dashboard({ onBackClick }) {
   return (
     <div className="dashboard">
-      <button onClick={onBackClick}>Back Button</button>
+      <button onClick={onBackClick} className="back-button">Back Button</button>
       <h1>Dashboard Summary</h1>
       <div className="dashboard-content">
           <div className="widget">

@@ -42,7 +42,6 @@
   margin-bottom: 10px;
 }
 
-
 .dashboard button {
   margin-bottom: 5px; 
   margin-left: 15px;
@@ -55,4 +54,13 @@
 
 .dashboard button:hover {
   background-color: #ffd333;
+}
+
+.back-button {
+  margin-bottom: 5px; 
+  background-color: #ffda4f; 
+  color: #239263; 
+  font-weight: bold;
+  border-radius: 25px;
+  font-size: 19px;
 }
