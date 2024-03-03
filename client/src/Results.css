@@ -1,0 +1,16 @@
+.Results {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    margin-left: 170px;
+    color: #239263;
+    text-align: center;
+}
+
+.back-button {
+    margin-bottom: 5px; 
+    background-color: #ffda4f; 
+    color: #239263; 
+    font-weight: bold;
+    border-radius: 25px;
+    font-size: 19px;
+  }

@@ -1,27 +1,31 @@
 .dashboard {
   font-family: Arial, sans-serif;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-  margin-left: 240px;
+  margin-left: 170px;
   color: #239263;
   text-align: center;
+}
+
+.dashboard h1 {
+  font-size: 40px;
+  margin-left: 15px;
 }
 
 .dashboard-content {
   display: flex;
   justify-content: space-between;
+  margin-left: 20px;
 }
 
 .widget {
   background-color: #feecd2;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
   padding: 20px;
   margin-bottom: 20px;
-  margin-right: 20px;
   flex: 1;
-  border-radius: 25px;
-  margin-top: 40px;
+  margin-top: 20px;
+  margin: 10px;
 }
 
 .widget h2 {
@@ -38,15 +42,11 @@
   margin-bottom: 10px;
 }
 
-/* Additional Styling for Patient Summary Widget */
-.widget:nth-child(3) {
-  background-color: #feecd2;
-}
-
 .dashboard button {
-  margin-bottom: 5px; /* Added some spacing below the button */
-  background-color: #ffda4f; /* Change the color of the button */
-  color: #239263; /* Change the font color */
+  margin-bottom: 5px; 
+  margin-left: 15px;
+  background-color: #ffda4f; 
+  color: #239263; 
   font-weight: bold;
   border-radius: 25px;
   font-size: 19px;
@@ -54,4 +54,13 @@
 
 .dashboard button:hover {
   background-color: #ffd333;
+}
+
+.back-button {
+  margin-bottom: 5px; 
+  background-color: #ffda4f; 
+  color: #239263; 
+  font-weight: bold;
+  border-radius: 25px;
+  font-size: 19px;
 }

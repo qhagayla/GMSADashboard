@@ -4,6 +4,10 @@ import Sidebar from "./Sidebar";
 import Dashboard from "./Dashboard";
 import RecordedVideos from "./RecordedVideos";
 import DateDisplay from "./DateDisplay";
+import Results from "./Results";
+import Settings from "./Settings";
+import Account from "./Account";
+
 
 function App() {
   const [activeMenuItem, setActiveMenuItem] = useState("");
@@ -29,7 +33,7 @@ function App() {
           <div className="content-top">
             <div className="greeting">
               <DateDisplay />
-              <h1 style={{ marginTop: '40px' }}>Hello, PT Sumalde!</h1> 
+              <h1>Hello, PT Sumalde!</h1> 
               <h2>Have a nice day!</h2> 
             </div>
             <img src="src\components\dashboard-top.png" alt="Image" />
@@ -55,6 +59,9 @@ function App() {
         {/* Dashboard, RecordedVideos, Results, Settings, and Account are rendered conditionally */}
         {activeMenuItem === "dashboard" && <Dashboard onBackClick={handleBackToAppClick} />}
         {activeMenuItem === "recordedVideos" && <RecordedVideos onBackClick={handleBackToAppClick} />}
+        {activeMenuItem === "results" && <Results onBackClick={handleBackToAppClick} />}
+        {activeMenuItem === "settings" && <Settings onBackClick={handleBackToAppClick} />}
+        {activeMenuItem === "account" && <Account onBackClick={handleBackToAppClick} />}
       </div>
 
       {/* Right-side wrapper for "Doctor's Profile" */}

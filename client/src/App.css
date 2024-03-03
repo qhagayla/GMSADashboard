@@ -27,6 +27,7 @@
 }
 
 .greeting h2 {
+  margin-bottom: 10px;
   font-size: 30px; /* Adjust the word "Have a nice day!" */
 }
 
